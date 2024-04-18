@@ -1,11 +1,10 @@
 import './App.css';
-import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useEffect, useState } from 'react';
 import List from './components/List';
-
+const API = 'http://localhost:5000'
 
 function App() {
-
   const [title, setTitle] = useState('');
   const [todos, setTodos] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -27,7 +26,6 @@ function App() {
 
     loadData()
   }, [])
-
 
 
   const createTodo = async () => {
@@ -53,6 +51,7 @@ function App() {
     setTitle('')
   }
 
+
   const editTodo = async (todo) => {
     todo.done = !todo.done
 
@@ -66,6 +65,7 @@ function App() {
 
     setTodos((prevState) => prevState.map((t) => t.id === data.id ? t = data : t))
   };
+
 
   const deleteTodo = async (id) => {
     await fetch(API + "/todos/" + id, {
