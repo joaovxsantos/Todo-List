@@ -1,0 +1,16 @@
+:root {
+  --gray-bg:#E3E9FF;
+  --white: #fff;
+  --black:#000;
+  --purple:#af7eeb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gray-bg) !important;
+}
