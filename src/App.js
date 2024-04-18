@@ -11,6 +11,25 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [showDiv, setShowDiv] = useState(false);
 
+
+  useEffect(() => {
+    const loadData = async () => {
+      setLoading(true)
+
+      const res = await fetch(API + "/todos")
+        .then((res) => res.json())
+        .then((data) => data)
+        .catch((err) => console.log(err))
+
+      setLoading(false)
+      setTodos(res)
+    }
+
+    loadData()
+  }, [])
+
+
+
   const createTodo = async () => {
     if (title) {
       console.log(title)
