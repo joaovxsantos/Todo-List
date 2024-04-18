@@ -34,6 +34,20 @@ function App() {
     setTitle('')
   }
 
+  const editTodo = async (todo) => {
+    todo.done = !todo.done
+
+    const data = await fetch(API + "/todos/" + todo.id, {
+      method: "PUT",
+      body: JSON.stringify(todo),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    setTodos((prevState) => prevState.map((t) => t.id === data.id ? t = data : t))
+  };
+
 
   return (
     <div className="App">
