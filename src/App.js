@@ -11,7 +11,16 @@ function App() {
 
   return (
     <div className="App">
-
+      <nav className="navbar">
+        <div className="container justify-content-center align-items-center">
+          <div className="head d-flex">
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={() => showDiv ? setShowDiv(false) : setShowDiv(true)}>
+              <i className="fas fa-bars"></i>
+            </button>
+            <a className="navbar-brand text-decoration-underline" href="#">Todo List</a>
+          </div>
+        </div>
+      </nav>
     </div>
   );
 }

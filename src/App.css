@@ -1,0 +1,34 @@
+/* Inicio do Head*/
+
+.container .head {
+  display: flex;
+  justify-content: center !important;
+  width: 350px !important;
+  max-width: 90vw;
+  padding: 8px 0;
+  border-radius: 4px;
+  position: relative !important;
+  background: var(--purple);
+}
+
+.container .head .navbar-toggler {
+  position: absolute !important;
+  top: 13px;
+  left: 0;
+  border: none !important;
+}
+.container .head .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.head .navbar-toggler .fa-bars {
+  font-size: 25px;
+  color: var(--white);
+}
+
+.container .head .navbar-brand {
+  font-family: "Pacifico", cursive;
+  color: var(--white);
+}
+
+/* Fim do Head */
