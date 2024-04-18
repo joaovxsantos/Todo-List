@@ -11,6 +11,30 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [showDiv, setShowDiv] = useState(false);
 
+  const createTodo = async () => {
+    if (title) {
+      console.log(title)
+
+      let todo = {
+        id: Math.random().toFixed(2),
+        title,
+        done: false
+      }
+
+      await fetch(API + "/todos", {
+        method: "POST",
+        body: JSON.stringify(todo),
+        headers: {
+          "Content-Type": "application/json"
+        },
+      });
+
+      setTodos((prevState) => [...prevState, todo])
+    }
+    setTitle('')
+  }
+
+
   return (
     <div className="App">
       <nav className="navbar">
