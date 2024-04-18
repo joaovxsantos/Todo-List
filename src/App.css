@@ -33,7 +33,6 @@
 
 /* Fim do Head */
 
-
 /* Inicio NavBar-collapse */
 
 .container .navbar-nav {
@@ -85,3 +84,44 @@
 }
 
 /*Fim NavBar-collapse  */
+
+/* Inicio Btn */
+.container .btn {
+  background: var(--purple);
+  color: var(--white) !important;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: -10px;
+  transition: all 100ms ease;
+}
+
+.container .btn:hover {
+  transform: scale(0.98);
+  background: var(--purple) !important;
+}
+
+.container .btn.hidden {
+  visibility: hidden;
+}
+/* Fim btn */
+
+/* Inicio input */
+.container input {
+  position: absolute;
+  bottom: -80px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  outline: none;
+  transition: all 100ms ease;
+}
+/* Fim input */
+
+/* Classe de estilo */
+.done {
+  text-decoration: line-through;
+}
+
+.done-circle {
+  background: var(--purple) !important;
+}
