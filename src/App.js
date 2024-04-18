@@ -48,6 +48,14 @@ function App() {
     setTodos((prevState) => prevState.map((t) => t.id === data.id ? t = data : t))
   };
 
+  const deleteTodo = async (id) => {
+    await fetch(API + "/todos/" + id, {
+      method: "DELETE"
+    });
+
+    setTodos((prevState) => prevState.filter((todo) => todo.id !== id))
+  }
+
 
   return (
     <div className="App">
