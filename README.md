@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Todo-List
+* Projeto de uma lista de tarefas inspirado no projeto do curso 'React Fundamental crie seu primeiro projeto'
+* Link do curso: [React Fundamental - Crie seu primeiro projeto](https://www.udemy.com/course/react-fundamental-crie-o-seu-primeiro-projeto/?couponCode=ST7MT41824)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
