@@ -1,6 +1,8 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import List from './components/List';
+
 
 function App() {
 
@@ -21,7 +23,7 @@ function App() {
           </div>
           <div className="collapse navbar-collapse show" id="navbarNav">
             <ul className="navbar-nav">
-              
+              {todos.length === 0 && <p>Não há tarefas!</p>}
             </ul>
           </div>
         </div>

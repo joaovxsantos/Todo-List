@@ -32,3 +32,56 @@
 }
 
 /* Fim do Head */
+
+
+/* Inicio NavBar-collapse */
+
+.container .navbar-nav {
+  width: 350px;
+  max-width: 90vw;
+  min-height: 200px;
+  margin: auto;
+  margin-top: 15px;
+  background: var(--white);
+}
+
+.container .navbar-nav p {
+  text-align: center;
+  line-height: 200px;
+  font-size: 20px;
+}
+
+.container .navbar-nav .nav-item {
+  color: var(--black);
+  padding: 0px 40px;
+  margin: 10px 0;
+  position: relative;
+}
+.container .navbar-nav .nav-item:first-of-type {
+  padding-top: 30px;
+}
+
+.container .navbar-nav .nav-item:last-of-type {
+  padding-bottom: 40px;
+}
+
+.container .navbar-nav .nav-item label {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.navbar-nav .nav-item .fa-circle {
+  color: transparent;
+  border: 1px solid var(--black);
+  border-radius: 50%;
+  font-size: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.navbar-nav .nav-item .bi-trash {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+}
+
+/*Fim NavBar-collapse  */
