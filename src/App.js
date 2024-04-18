@@ -17,7 +17,12 @@ function App() {
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={() => showDiv ? setShowDiv(false) : setShowDiv(true)}>
               <i className="fas fa-bars"></i>
             </button>
-            <a className="navbar-brand text-decoration-underline" href="#">Todo List</a>
+            <a className="navbar-brand text-decoration-underline" href="#">Lista de tarefas</a>
+          </div>
+          <div className="collapse navbar-collapse show" id="navbarNav">
+            <ul className="navbar-nav">
+              
+            </ul>
           </div>
         </div>
       </nav>
