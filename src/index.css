@@ -12,5 +12,10 @@
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-bottom: 80px;
   background: var(--gray-bg) !important;
 }
