@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react';
 import List from './components/List';
-const API = 'http://localhost:5000'
+const API = 'https://json-server-drab-iota.vercel.app'
 
 function App() {
   const [title, setTitle] = useState('');
@@ -20,9 +20,13 @@ function App() {
         .then((data) => data)
         .catch((err) => console.log(err))
 
-      setLoading(false)
+      setTimeout(() => {
+        setLoading(false)
+      }, 3000)
       setTodos(res)
     }
+
+
 
     loadData()
   }, [])
@@ -30,7 +34,6 @@ function App() {
 
   const createTodo = async () => {
     if (title) {
-      console.log(title)
 
       let todo = {
         id: Math.random().toFixed(2),
@@ -78,7 +81,8 @@ function App() {
 
   return (
     <div className="App">
-      <nav className="navbar">
+      {loading && <div className="loading-container"><div className="loading"><label>Carregando...</label></div></div>}
+      <nav className={`navbar ${!loading && 'show'}`}>
         <div className="container justify-content-center align-items-center">
           <div className="head d-flex">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={() => showDiv ? setShowDiv(false) : setShowDiv(true)}>
