@@ -35,3 +35,12 @@ npm start
 ```
 
 O projeto abrirá no seu navegador padrão e está pronto para uso!
+
+## Resultado do Projeto
+
+
+https://github.com/joaovxsantos/todo/assets/97799540/00e8cf59-8857-4d4b-9150-6fe4f6be34e0
+
+
+
+
